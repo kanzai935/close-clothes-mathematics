@@ -1,0 +1,8 @@
+version: '3'
+services:
+  close-clothes-math:
+    image: 'gcc:9.3.0'
+    volumes:
+      - ./app:/src/app
+    working_dir: /src/app
+    command: ./build.sh
